@@ -1,0 +1,71 @@
+[
+  {
+    "filename": "AS.RES",
+    "mixture_name": "Горение без расширения",
+    "mixture_density": 0.1,
+    "components": [
+      {
+        "name": "N",
+        "hf298": -2463.27
+      },
+      {
+        "name": "AL18.53MG20.57",
+        "hf298": 0.0
+      }
+    ],
+    "element_composition": {
+      "H": 17.023,
+      "N": 4.2557,
+      "O": 17.023,
+      "Mg": 10.286,
+      "Al": 9.2657,
+      "Cl": 4.2557
+    },
+    "calculations": [
+      {
+        "id": 1,
+        "composition_percent": [
+          50.0,
+          50.0
+        ],
+        "pressure": 0.1,
+        "temperature": 3330.3,
+        "enthalpy": 1609.3,
+        "entropy": 8.0455,
+        "heat_capacity": 1.5083,
+        "density": 0.20888,
+        "molar_mass": 39.804,
+        "adiabatic_index": 1.1607,
+        "volume_gas": 6956.4,
+        "condensed_fraction": 0.45259,
+        "equilibrium_gas": {
+          "Mg": 7.2834,
+          "Al": 0.12783,
+          "Cl": 0.97965,
+          "O2": 0.047951,
+          "H2": 3.8874,
+          "OH": 0.58228,
+          "H2O": 1.4043,
+          "HCl": 1.4705,
+          "N2": 2.1007,
+          "NO": 0.053459,
+          "AlO": 0.17195,
+          "Al2O": 0.080578,
+          "AlH": 0.0036335,
+          "AlOH": 0.15774,
+          "AlCl": 0.58962,
+          "MgO": 0.66688,
+          "MgH": 0.0083046,
+          "MgOH": 0.22134,
+          "MgCl": 0.71872
+        },
+        "equilibrium_condensed": {
+          "Al2O3": 2.8328,
+          "MgAl2O4": 1.1511
+        },
+        "calculation_date": "21.02.26",
+        "calculation_time": "14:26:58"
+      }
+    ]
+  }
+]
