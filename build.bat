@@ -73,29 +73,25 @@ echo [OK] CatalogEditor.exe built
 echo.
 
 REM Copy exe files
-echo [4/4] Copying to Release folder...
-if not exist "Release" mkdir "Release"
-copy /Y "dist\ThermoApp.exe" "Release\"
-copy /Y "dist\CatalogEditor.exe" "Release\"
+echo [4/4] Copying EXE files to root folder...
+copy /Y "dist\ThermoApp.exe" "."
+copy /Y "dist\CatalogEditor.exe" "."
 
 echo.
 echo ============================================
 echo Build completed successfully!
 echo ============================================
-echo EXE files location: %CD%\Release
+echo EXE files location: %CD%
 echo   - ThermoApp.exe (with matplotlib)
 echo   - CatalogEditor.exe
 echo ============================================
 echo.
 
-REM Cleanup
-echo Clean temp files? (Y/N)
-set /p clean=
-if /i "%clean%"=="Y" (
-    if exist "build" rmdir /s /q "build"
-    if exist "dist" rmdir /s /q "dist"
-    if exist "*.spec" del /q "*.spec"
-    echo [OK] Cleaned
-)
+REM Auto cleanup temp files
+echo [5/5] Cleaning temp files...
+if exist "build" rmdir /s /q "build"
+if exist "dist" rmdir /s /q "dist"
+if exist "*.spec" del /q "*.spec"
+echo [OK] Cleaned
 
 pause
